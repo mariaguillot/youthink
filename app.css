@@ -1,0 +1,20 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.options ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+svg{
+  fill: blueviolet;
+  width: 4rem;
+}
