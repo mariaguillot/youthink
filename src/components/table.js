@@ -65,6 +65,10 @@ render() {
         box-sizing: border-box;
       }
 
+      :host{
+        width: 100%;
+      }
+
       svg {
         width: 2.5rem;
         fill: hsl(0, 0.00%, 0.00%);
@@ -74,14 +78,11 @@ render() {
         margin: 0;
         padding: 0;
         list-style: none;
-        display:grid;
-        grid-template-columns: 1fr 1fr;
       }
 
       .register ul{
         padding: 1rem;
         padding-left: 2rem;
-        
       }
 
       button{
@@ -94,25 +95,35 @@ render() {
         flex-direction: column;
         gap: 1rem;
       }
+
+      .body-table{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        background-color: black;
+      }
+
+      .register{
+        background-color: pink;
+      }
       
       .header-table{
-        background-color: hsl(208, 69.20%, 72.00%);
+        background-color: hsl(0, 4.30%, 72.90%);
       }
 
       .header-body{
-        background-color: hsl(208, 69.20%, 72.00%);
+        background-color: hsl(0, 100.00%, 50.00%);
         display: flex;
-        flex direction: row;
         justify-content: right;
+        
       }
 
       .info-body{
-        background-color: hsl(0, 0%, 0%);
+        background-color: hsl(0, 4.30%, 72.90%);
       }
 
       .body-table{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto;
         gap: 1rem;
         padding: 0 5%;
         padding-bottom: 0.5rem;
@@ -122,12 +133,12 @@ render() {
       }
 
       .body-table::-webkit-scrollbar {
-        background-color: black;
+        background-color: hsl(0, 0.00%, 19.20%);
         border-radius: 5px;
       }
 
       .body-table::-webkit-scrollbar-thumb {
-        background-color: hsl(208, 69.20%, 72.00%);;
+        background-color: hsl(0, 4.30%, 72.90%);
         border-radius: 5px;
       }
 
@@ -135,7 +146,7 @@ render() {
         padding: 0.5rem;
         display: flex;
         justify-content: bottom;
-        background-color: hsl(208, 69.20%, 72.00%);
+        background-color: hsl(0, 4.30%, 72.90%);
         color: black;
         bottom: 3vh;
       }
@@ -172,19 +183,6 @@ render() {
       headerBodyContainer.classList.add('header-body')
       register.appendChild(headerBodyContainer)
 
-      const editIcon = document.createElement('div')
-      editIcon.classList.add('edit-icon')
-      headerBodyContainer.appendChild(editIcon)
-      const editButton = document.createElement('button')
-      editButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>pencil</title><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>`
-      editIcon.appendChild(editButton)
-
-      const trashIcon = document.createElement('div')
-      trashIcon.classList.add('trash-icon')
-      headerBodyContainer.appendChild(trashIcon)
-      const trashButton = document.createElement('button')
-      trashButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>delete</title><path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" /></svg>`
-      trashIcon.appendChild(trashButton)
 
       const infoBody = document.createElement('div')
       infoBody.classList.add('info-body')
@@ -215,7 +213,7 @@ render() {
    footerTable.classList.add('footer-table')
    tableContainer.appendChild(footerTable)
    const countPages = document.createElement('span')
-   countPages.innerHTML = `1 registro en total, mostrando 10 por página`
+   countPages.innerHTML = `1 registro en total, mostrando 9 por página`
    footerTable.appendChild(countPages)
 
   }
