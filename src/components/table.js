@@ -13,42 +13,49 @@ class Table extends HTMLElement {
   loadData() {
     this.data = [
       {
+        title: 'youthink',
         name: 'Carlos',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
+        title: 'youthink',
         name: 'Maria',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
+        title: 'youthink',
         name: 'Mark',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
+        title: 'youthink',
         name: 'Maria',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
+        title: 'youthink',
         name: 'Mark',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
+        title: 'youthink',
         name: 'Maria',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
+        title: 'youthink',
         name: 'Mark',
         email: 'carlossedagambin@gmail.com',
         createdAt: '2024-04-22',
@@ -96,14 +103,12 @@ render() {
         gap: 1rem;
       }
 
-      .body-table{
-        display: grid;
-        grid-template-columns: repeat(3, 2fr);
-        background-color: black;
-      }
-
       .register{
-        background-color: pink;
+        background-color: hsla(0, 2.00%, 28.80%, 0.19);
+        border: 2px solid hsl(0, 2.90%, 27.10%);
+        width: 100%;
+        max-width: 100%;
+        word-break: break-word;
       }
       
       .header-table{
@@ -111,22 +116,14 @@ render() {
       }
 
       .header-body{
-        background-color: hsl(0, 100.00%, 50.00%);
-        display: flex;
-        justify-content: right;
-        
-      }
-
-      .info-body{
-        background-color: hsl(0, 4.30%, 72.90%);
+        background-color: hsl(0, 2.90%, 27.10%);
+        color: hsl(0, 0.00%, 100.00%);
+        padding:0.5rem;
       }
 
       .body-table{
         display: grid;
-        grid-template-rows: auto;
         gap: 1rem;
-        padding: 0 5%;
-        padding-bottom: 0.5rem;
         min-height: 75vh;
         max-height: 70vh;
         overflow-y: scroll;
@@ -158,8 +155,7 @@ render() {
     const tableContainer = this.shadow.querySelector('.table')
     const headerTable = document.createElement('div')
     headerTable.classList.add('header-table')
-    tableContainer.appendChild(headerTable)
-  
+    tableContainer.appendChild(headerTable)  
 
     const headerUl = document.createElement('ul')
     headerTable.appendChild(headerUl)
@@ -183,6 +179,13 @@ render() {
       headerBodyContainer.classList.add('header-body')
       register.appendChild(headerBodyContainer)
 
+      const headerBodyContent = document.createElement('div')
+      headerBodyContent.classList.add('header-body-content')
+      headerBodyContainer.appendChild(headerBodyContent)
+
+      const headerBodyTitle = document.createElement('span')
+      headerBodyTitle.textContent = element.title
+      headerBodyContent.appendChild(headerBodyTitle)
 
       const infoBody = document.createElement('div')
       infoBody.classList.add('info-body')
