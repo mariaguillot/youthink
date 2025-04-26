@@ -129,16 +129,6 @@ render() {
         overflow-y: scroll;
       }
 
-      .body-table::-webkit-scrollbar {
-        background-color: hsl(0, 0.00%, 19.20%);
-        border-radius: 5px;
-      }
-
-      .body-table::-webkit-scrollbar-thumb {
-        background-color: hsl(0, 4.30%, 72.90%);
-        border-radius: 5px;
-      }
-
       .footer-table {
         padding: 0.5rem;
         display: flex;
