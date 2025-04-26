@@ -15,49 +15,49 @@ class Table extends HTMLElement {
       {
         title: 'youthink',
         name: 'Carlos',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
         title: 'youthink',
         name: 'Maria',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
         title: 'youthink',
         name: 'Mark',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
         title: 'youthink',
         name: 'Maria',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
         title: 'youthink',
         name: 'Mark',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
         title: 'youthink',
         name: 'Maria',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
       {
         title: 'youthink',
         name: 'Mark',
-        email: 'carlossedagambin@gmail.com',
+        email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
         updatedAt: '2024-04-22'
       },
@@ -105,7 +105,7 @@ render() {
 
       .register{
         background-color: hsla(0, 2.00%, 28.80%, 0.19);
-        border: 2px solid hsl(0, 2.90%, 27.10%);
+        border: 8px double hsl(0, 2.90%, 27.10%);
         width: 100%;
         max-width: 100%;
         word-break: break-word;
@@ -122,10 +122,10 @@ render() {
       }
 
       .body-table{
+        witdh: 100%;
         display: grid;
-        gap: 1rem;
-        min-height: 75vh;
-        max-height: 70vh;
+        gap: 1rem;        
+        align-items: center;
         overflow-y: scroll;
       }
 
