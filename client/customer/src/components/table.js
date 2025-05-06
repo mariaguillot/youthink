@@ -34,7 +34,7 @@ class Table extends HTMLElement {
         updatedAt: '2024-04-22'
       },
       {
-        title: 'youthink',
+        title: 'youthinkyouthinkyouthinkyouthinkyouthinkyouthinkyouthinkyouthink',
         name: 'Maria',
         email: 'gambin@gmail.com',
         createdAt: '2024-04-22',
@@ -104,21 +104,22 @@ render() {
       }
 
       .register{
-        background-color: hsla(0, 2.00%, 28.80%, 0.19);
-        border: 8px double hsl(0, 2.90%, 27.10%);
-        width: 100%;
-        max-width: 100%;
+        background-color: hsl(0, 0%, 75%);
+        margin: 0.5rem;
         word-break: break-word;
+        border: 2px solid hsl(0, 2.90%, 27.10%);
       }
       
       .header-table{
-        background-color: hsl(0, 4.30%, 72.90%);
+        background-color:  hsl(0, 0%, 75%);
+        
       }
 
       .header-body{
-        background-color: hsl(0, 2.90%, 27.10%);
-        color: hsl(0, 0.00%, 100.00%);
+        border-bottom: 2px solid hsl(0, 2.90%, 27.10%);
+        color: black;
         padding:0.5rem;
+        margin: 0.5rem;
       }
 
       .body-table{
@@ -133,7 +134,7 @@ render() {
         padding: 0.5rem;
         display: flex;
         justify-content: bottom;
-        background-color: hsl(0, 4.30%, 72.90%);
+        background-color: hsl(0, 0%, 75%);
         color: black;
         bottom: 3vh;
       }
