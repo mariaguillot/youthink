@@ -28,7 +28,7 @@ render() {
       }
     </style>
 
-    <img src="img/youthink.svg"></img>
+    <img src="img/youthink.svg">
   `
   }
 }
